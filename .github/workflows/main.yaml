@@ -13,5 +13,5 @@ jobs:
       with:
         url: ${{ sectrets.URL }}
         user: ${{ secrets.USER }}
-        token: ${{ secretc.TOKEN }}
+        token: ${{ secrets.TOKEN }}
         job: ${{ secrets.JOBS }}
