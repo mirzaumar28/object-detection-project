@@ -1,10 +1,10 @@
 pipeline {
     agent any
     environment{
-        ECR_REPOSITORY = creditentials('ECR_REPOSITORY')
-        AWS_ACCOUNT_ID = creditentials('AWS_ACCOUNT_ID')
-        AWS_ACCESS_KEY_ID = creditentials('AWS_ACCESS_KEY_ID')
-        AWS_SECRET_ACCESS_KEY = creditentials('AWS_SECRET_ACCESS_KEY')
+        ECR_REPOSITORY = credentials('ECR_REPOSITORY')
+        AWS_ACCOUNT_ID = credentials('AWS_ACCOUNT_ID')
+        AWS_ACCESS_KEY_ID = credentials('AWS_ACCESS_KEY_ID')
+        AWS_SECRET_ACCESS_KEY = credentials('AWS_SECRET_ACCESS_KEY')
     }
 
     stages{
